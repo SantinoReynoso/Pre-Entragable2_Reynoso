@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f7e7;
+}
+
+/* Estilos para el contenedor del logo y el título */
+.logoytitulo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 100px;
+    background-color: burlywood;
+    border-radius: 10px;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+/* Estilos para el título principal */
+.logoytitulo h1 {
+    font-size: 70px;
+    color: #2e897f ;
+    text-align: center;
+    font-style: normal;
+    transition: transform 0.3s;
+    margin-top: 40px;
+}
+
+.logoytitulo :hover{
+    transform:scale(1.2);
+    margin-left: 15px;
+}
+
+/* Estilos para el logo */
+.logoytitulo img {
+    width: 200px;
+    height: auto;
+    margin-right: 50px;
+    border-radius: 25px;
+
+}
+
+/* Estilos del subtítulo "Since 2009" */
+.logotitulo .caja-since-2009{
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    text-align: center;  
+}
+
+h2 {
+    display: inline-block;
+    color: #2e897f;
+    background-color:  #f9f1c8;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+/* Estilos el nav bar */
+.nav{
+    display: flex;
+    background-color: burlywood;
+    padding: 5px;
+    justify-content: space-between; 
+    font-size: 70px;
+    transition: transform 1.3s;
+}
+
+nav a:hover{
+    transform:scale(1.2);
+    margin-left: 15px;
+}
+
+.nav li{
+    padding: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    transition: transform 1.3s;
+}
+/* fin de nav bar */
+ 
+section .alert{
+    display: flex;
+    font-size: 100px;
+    padding: 100px;
+    justify-content: center;
+}
+
+/* seccion cartas de productos */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: burlywood;
+    border:solid gray 1px;
+    transition: transform 0.5s;
+}
+
+.cards .card:hover {
+    transform:scale(1.2);
+    border-radius: 50px;
+    border: solid black 5px;
+    font-size: larger;
+}
+
+.card img{
+    border-radius: 100px;
+}
+/* fin seccion cartas de productos */
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+/* estilos de los links del footer */
+footer a{
+    text-decoration: none;
+    color: snow;
+}
+
+/* los links del footer */
+.listafooter{
+    list-style-type: none;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera equitativa */
+}
+
+.dropdown{
+    display: none;
+}
+
+@media (max-width:1023px) {
+     /* logo y titulo */
+     .logoytitulo img{
+        height: 90px;
+        width: auto;
+        border-radius: 100%;
+     }
+     .caja-since-2009{
+        display: none;
+     }
+    /* header menu */
+    .nav{
+        display: none;
+    }
+    .dropdown{
+        display: inline;
+        display: flex;
+        justify-content: start;
+        padding: 75px;
+        margin-bottom: 100px;
+    }
+    .card{
+        border: solid black;
+    }
+}
