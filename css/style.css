@@ -8,9 +8,6 @@ body {
 .logoytitulo {
     display: flex;
     align-items: flex-start;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
     padding: 100px;
     background-color: burlywood;
     border-radius: 10px;
@@ -87,9 +84,19 @@ nav a:hover{
 }
 /* fin de nav bar */
  
+/* area de los productos pagina productos */
+.listas{
+    display: flex;
+    font-size: 50px;
+    padding: 50px;
+    justify-content: center;
+    background-color: burlywood;
+    border: solid gray 2px;
+}
+/* fin area de los productos pagina productos */
 section .alert{
     display: flex;
-    font-size: 100px;
+    font-size: 50px;
     padding: 100px;
     justify-content: center;
 }
@@ -112,6 +119,9 @@ section .alert{
     font-size: larger;
 }
 
+.card{
+    margin-bottom: 75px;
+}
 .card img{
     border-radius: 100px;
 }
